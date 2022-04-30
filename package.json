@@ -1,0 +1,20 @@
+{
+  "name": "fizzbuzz",
+  "version": "1.0.0",
+  "description": "Proyecto realizado en Launch X - Mission Backend",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DavidRamirez5/fizzbuzz.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DavidRamirez5/fizzbuzz/issues"
+  },
+  "homepage": "https://github.com/DavidRamirez5/fizzbuzz#readme"
+}
