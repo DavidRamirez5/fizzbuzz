@@ -6,4 +6,9 @@ describe('Metodos ExplorerService',()=>{
         const explorersBymission= ExplorerService.filterbyMission(explorers,"node")
         expect(explorersBymission).not.toBeUndefined();
     })
+    test('2. Metodo getAmounthofExplorersByMission',()=>{
+        const explorers = Reader.readJsonFile("explorers.json")
+        const amountExplorers= ExplorerService.getAmountOfExplorersByMission(explorers,'node')
+        expect(amountExplorers).toBe(10)
+    })
 })
