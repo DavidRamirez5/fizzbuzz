@@ -4,7 +4,7 @@
   "description": "Proyecto realizado en Launch X - Mission Backend",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/DavidRamirez5/fizzbuzz/issues"
   },
-  "homepage": "https://github.com/DavidRamirez5/fizzbuzz#readme"
+  "homepage": "https://github.com/DavidRamirez5/fizzbuzz#readme",
+  "dependencies": {
+    "jest": "^28.0.3"
+  }
 }
