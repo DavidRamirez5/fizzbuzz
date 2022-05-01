@@ -11,4 +11,9 @@ describe('Metodos ExplorerService',()=>{
         const amountExplorers= ExplorerService.getAmountOfExplorersByMission(explorers,'node')
         expect(amountExplorers).toBe(10)
     })
+    test('3. Metodo getExplorersUsernamesByMission',()=>{
+        const explorers= Reader.readJsonFile("explorers.json")
+        const explorersUsername= ExplorerService.getExplorerUsernamesByMission(explorers,"node")
+        expect(explorersUsername).not.toBeUndefined()
+    })
 })
