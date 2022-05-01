@@ -13,7 +13,7 @@ describe('Metodos ExplorerService',()=>{
     })
     test('3. Metodo getExplorersUsernamesByMission',()=>{
         const explorers= Reader.readJsonFile("explorers.json")
-        const explorersUsername= ExplorerService.getExplorerUsernamesByMission(explorers,"node")
+        const explorersUsername= ExplorerService.getExploerersUsernamesByMission(explorers,"node")
         expect(explorersUsername).not.toBeUndefined()
     })
 })
