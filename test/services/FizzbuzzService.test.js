@@ -1,6 +1,6 @@
 const FizzbuzzService = require("../../lib/services/FizzbuzzService");
 
-describe("Test FizzbuzzService",()=>{
+describe("Test FizzbuzzService - Metodo (applyValidationInExploerer)",()=>{
     test("1. Validaciones score no divisble entre 5 o 3",()=>{
         const explorer1 = {name:"Explorer1",score:1};
         const type=FizzbuzzService.applyValidationInExplorer(explorer1);
@@ -22,3 +22,22 @@ describe("Test FizzbuzzService",()=>{
         expect(type.trick).toBe("FIZZBUZZ");  
     });
 });
+
+describe("Test FizzbuzzService - Metodo (applyValidationInNumber)",()=>{
+    test('1. Numero divisible entre 3 y 5',()=>{
+        const fizznumber= FizzbuzzService.applyValidationInNumber(15);
+        expect(fizznumber).toBe('FIZZBUZZ')
+    })
+    test('1. Numero divisible entre 3',()=>{
+        const fizznumber= FizzbuzzService.applyValidationInNumber(3);
+        expect(fizznumber).toBe('FIZZ')
+    })
+    test('1. Numero divisible entre 5',()=>{
+        const fizznumber= FizzbuzzService.applyValidationInNumber(5);
+        expect(fizznumber).toBe('BUZZ')
+    })
+    test('1. Numero no divisible entre 3 y 5',()=>{
+        const fizznumber= FizzbuzzService.applyValidationInNumber(1);
+        expect(fizznumber).toBe(1)
+    })
+})
