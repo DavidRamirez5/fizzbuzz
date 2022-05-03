@@ -4,4 +4,8 @@ describe('Test para Class ExplorerController',()=>{
         const explorerslist= ExplorerController.getExplorerByMission('node')
         expect(explorerslist).not.toBeUndefined()
     })
+    test('2. Method - getExplorerUsernamesByMission',()=>{
+        const explorersUsernames= ExplorerController.getExplorersUsernamesByMission('node')
+        expect(explorersUsernames).not.toBeUndefined()
+    })
 })
