@@ -28,15 +28,15 @@ describe("Test FizzbuzzService - Metodo (applyValidationInNumber)",()=>{
         const fizznumber= FizzbuzzService.applyValidationInNumber(15);
         expect(fizznumber).toBe('FIZZBUZZ')
     })
-    test('1. Numero divisible entre 3',()=>{
+    test('2. Numero divisible entre 3',()=>{
         const fizznumber= FizzbuzzService.applyValidationInNumber(3);
         expect(fizznumber).toBe('FIZZ')
     })
-    test('1. Numero divisible entre 5',()=>{
+    test('3. Numero divisible entre 5',()=>{
         const fizznumber= FizzbuzzService.applyValidationInNumber(5);
         expect(fizznumber).toBe('BUZZ')
     })
-    test('1. Numero no divisible entre 3 y 5',()=>{
+    test('4. Numero no divisible entre 3 y 5',()=>{
         const fizznumber= FizzbuzzService.applyValidationInNumber(1);
         expect(fizznumber).toBe(1)
     })
