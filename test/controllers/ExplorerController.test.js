@@ -9,7 +9,7 @@ describe('Test para Class ExplorerController',()=>{
         expect(explorersUsernames).not.toBeUndefined()
     })
     test('3. Method - getExplorersAmonutByMission',()=>{
-        const numExplorers= ExplorerController.getExplorersAmonutByMission()
+        const numExplorers= ExplorerController.getExplorersAmonutByMission('node')
         expect(numExplorers).toBe(10)
     })
 })
